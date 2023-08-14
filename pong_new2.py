@@ -43,14 +43,15 @@ clock = time.Clock()
 FPS = 60
 
 #creating ball and paddles   
-racket1 = Player('Player.png', 30, 200, 4, 50, 150) 
-racket2 = Player('Player.png', 520, 200, 4, 50, 150)
-ball = GameSprite('Ball.png', 200, 200, 4, 50, 50)
+racket1 = Player('Player1.png', 30, 200, 4, 25, 75) 
+racket2 = Player('Player2.png', 520, 200, 4, 25, 75)
+ball = GameSprite('Ball.png', 200, 200, 4, 25, 25)
 
 font.init()
 font = font.Font(None, 35)
-lose1 = font.render('PLAYER 1 LOSE!', True, (180, 0, 0))
-lose2 = font.render('PLAYER 2 LOSE!', True, (180, 0, 0))
+win1 = font.render('PLAYER 2 WIN!', True, (180, 0, 0))
+win2 = font.render('PLAYER 1 WIN!', True, (180, 0, 0))
+# score = font.render(s)
 
 speed_x = 3
 speed_y = 3
